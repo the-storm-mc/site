@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Storm</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        'windmill': "url('windmill.png')"
+                    },
+                    colors: {
+                        'gray': 'rgb(48, 48, 48)',
+                        'teal': 'rgb(78, 205, 197)',
+                        'white': 'rgb(255, 255, 255)'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="min-h-screen w-screen flex justify-center items-center bg-windmill bg-fixed bg-cover">
+        <div class="w-10/12 md:w-2/6">
+            <div class="flex justify-center self-center mb-20">
+                <img src="logo.png" />
+            </div>
+            <div class="flex justify-center flex-col md:flex-row">
+                <div class="m-2 p-4 bg-gray text-center">
+                    <a class="underline text-xl hover:no-underline text-teal">Blog</a>
+                </div>
+                <div class="m-2 p-4 bg-gray text-center">
+                    <a class="underline text-xl hover:no-underline text-teal" href="//docs.ts-mc.net">Docs</a>
+                </div>
+                <div class="m-2 p-4 bg-gray text-center">
+                    <a class="underline text-xl hover:no-underline text-teal" href="//livemap.ts-mc.net">LiveMap</a>
+                </div>
+                <div class="m-2 p-4 bg-gray text-center">
+                    <a class="underline text-xl hover:no-underline text-teal"
+                        href="https://discord.gg/TvTCcWnYUT">Discord</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
