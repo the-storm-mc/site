@@ -33,10 +33,11 @@
             theme: {
                 extend: {
                     backgroundImage: {
-                        'windmill': "url('windmill.png')"
+                        'bg': "url('bg.jpg')"
                     },
                     colors: {
                         'gray': 'rgb(48, 48, 48)',
+                        'light-gray': 'rgb(53, 53, 53)',
                         'teal': 'rgb(78, 205, 197)',
                         'white': 'rgb(255, 255, 255)'
                     }
@@ -46,25 +47,22 @@
     </script>
 </head>
 
-<body>
-    <div class="min-h-screen w-screen flex justify-center items-center bg-windmill bg-fixed bg-cover">
-        <div class="w-10/12 md:w-2/6">
-            <div class="flex justify-center self-center mb-20">
-                <img src="logo.svg" />
-            </div>
-            <div class="flex justify-center flex-col md:flex-row">
-                <div class="m-2 p-4 bg-gray text-center">
-                    <a class="underline text-xl hover:no-underline text-teal" href="//docs.ts-mc.net">Docs</a>
-                </div>
-                <div class="m-2 p-4 bg-gray text-center">
-                    <a class="underline text-xl hover:no-underline text-teal" href="//livemap.ts-mc.net">LiveMap</a>
-                </div>
-                <div class="m-2 p-4 bg-gray text-center">
-                    <a class="underline text-xl hover:no-underline text-teal"
+<body class="overflow-hidden">
+    <div class="min-h-screen w-screen bg-bg bg-fixed bg-cover">
+        <div class="flex flex-col h-screen justify-evenly">
+            <div class="flex flex-col items-center">
+                <img src="logo.svg" class="w-screen md:w-2/4" />
+                <div class="flex flex-col md:flex-row">
+                    <a class="transition-all duration-300 rounded-lg m-6 md:m-10 p-6 md:p-12 bg-gray hover:bg-light-gray text-center hover:underline text-2xl md:text-4xl no-underline text-teal"
+                        href="https://docs.ts-mc.net">Docs</a>
+                    <a class="transition-all duration-300 rounded-lg m-6 md:m-10 p-6 md:p-12 bg-gray hover:bg-light-gray text-center hover:underline text-2xl md:text-4xl no-underline text-teal"
+                        href="https://livemap.ts-mc.net">LiveMap</a>
+                    <a class="transition-all duration-300 rounded-lg m-6 md:m-10 p-6 md:p-12 bg-gray hover:bg-light-gray text-center hover:underline text-2xl md:text-4xl no-underline text-teal"
                         href="https://discord.gg/TvTCcWnYUT">Discord</a>
                 </div>
             </div>
         </div>
+
     </div>
 </body>
 
